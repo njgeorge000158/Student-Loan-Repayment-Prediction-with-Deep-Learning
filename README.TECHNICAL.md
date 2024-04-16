@@ -1,4 +1,4 @@
-# **Spam Detection with Supervised Machine Learning Models Using Scikit-Learn**
+# **Student Loan Repayment Prediction with Deep Learning**
 
 ----
 
@@ -32,9 +32,7 @@ pip3 install -U scikit-learn
 
 ----
 
-The IPython notebook, spam_detector.ipynb, requires the following Python scripts with it in the same folder:
-
-classificationsx.py
+The IPython notebook, student_loans.ipynb, requires the following Python scripts with it in the same folder:
 
 logx_constants.py
 
@@ -42,7 +40,9 @@ logx.py
 
 pandas_processx.py
 
-If the folders, logs and images, are not present, the IPython notebook will create them.  The IPython notebook, spam_detector.ipynb, requires the csv file, spam_data.csv, found in the link, https://static.bc-edx.com/mbc/ai/m4/datasets/spam-data.csv, to execute. To place the IPython notebook in Log Mode or Image Mode set the parameter for the appropriate function in the IPython notebook's second coding cell to True. If the program is in Log Mode, it writes designated information to the log file in the folder, logs. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG and HTML files to the folder, images.
+student_loans_constants.py
+
+If the folders, logs and images, are not present, the IPython notebook will create them.  The IPython notebook, student_loans.ipynb, requires the csv file, student_loans.csv, found in the link, [https://static.bc-edx.com/mbc/ai/m4/datasets/spam-data.csv](https://static.bc-edx.com/mbc/ai/m6/datasets/student_loans.csv), to execute. To place the IPython notebook in Log Mode or Image Mode set the parameter for the appropriate function in the IPython notebook's second coding cell to True. If the program is in Log Mode, it writes designated information to the log file in the folder, logs. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG and HTML files to the folder, images.
 
 ----
 
@@ -52,7 +52,7 @@ If the folders, logs and images, are not present, the IPython notebook will crea
 
 #### Source code
 
-spam_detector.ipynb, classificationsx.py, logx_constants.py, logx.py, log_subroutines.py, pandas_processx.py
+student_loans.ipynb, student_loans_constants.py, logx_constants.py, logx.py, pandas_processx.py
 
 #### Input files
 
@@ -60,7 +60,7 @@ spam_data.csv
 
 #### Output files
 
-dt_centroids_model.sav, dt_model.sav, dt_oversampled_model.sav, dt_smote_model.sav, dt_smoteen_model.sav, dt_undersampled_model.sav, gnb_centroids_model.sav, gnb_model.sav, gnb_oversampled_model.sav, gnb_smote_model.sav, gnb_smoteen_model.sav, gnb_undersampled_model.sav, knn_centroids_model.sav, knn_model.sav, knn_oversampled_model.sav, knn_smote_model.sav, knn_smoteen_model.sav, knn_undersampled_model.sav, lr_centroids_model.sav, lr_model.sav, lr_oversampled_model.sav, lr_smote_model.sav, lr_smoteen_model.sav, lr_undersampled_model.sav, rf_centroids_model.sav, rf_model.sav, rf_oversampled_model.sav, rf_smote_model.sav, rf_smoteen_model.sav, rf_undersampled_model.sav, svm_centroids_model.sav, svm_model.sav, svm_oversampled_model.sav, svm_smote_model.sav, svm_smoteen_model.sav, svm_undersampled_model.sav
+nn_student_loans_model.keras
 
 #### SQL script
 
