@@ -8,7 +8,7 @@
 
 If the computer has Anaconda, Jupyter Notebook, and a recent version of Python, the IPython notebook already has the following dependencies installed: datetime, io, json, matplotlib, numpy, pandas, pathlib, os, pandas, requests, requests_html, scipy.
 
-In addition to those modules, the IPython notebook needs the following to execute: holoviews, hvplot, geoviews, geopy, aspose-words, dataframe-image, sklearn.
+In addition to those modules, the IPython notebook needs the following to execute: holoviews, hvplot, geoviews, geopy, aspose-words, dataframe-image, scikit-learn, tensorflow, and silence_tensorflow.
 
 Here are the requisite Terminal commands for the installation of these peripheral modules:
 
@@ -25,6 +25,10 @@ pip3 install -U aspose-words
 pip3 install -U dataframe-image
 
 pip3 install -U scikit-learn
+
+pip3 install -U tensorflow
+
+pip3 install -U silence_tensorflow
 
 ----
 
@@ -56,7 +60,7 @@ student_loans.ipynb, student_loans_constants.py, logx_constants.py, logx.py, pan
 
 #### Input files
 
-spam_data.csv
+student_loans.csv
 
 #### Output files
 
