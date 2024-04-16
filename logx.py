@@ -203,19 +203,16 @@ def get_image_file_path \
     
     temp_string = ''.join(filter(str.isalnum, caption_string))
     
-    
     image_file_path \
         = logx_constants.IMAGES_DIRECTORY_PATH \
             + '/' \
             + logx_constants.PROGRAM_DESIGNATION \
             + temp_string
     
-    
     if image_format_string != '':
     
         image_file_path += '.' + image_format_string
         
-    
     return image_file_path
 
 
@@ -251,24 +248,14 @@ def save_png_return_styler \
         (input_styler,
          caption_string):
     
-    try:
-        
-        if logx_constants.IMAGE_FLAG == True:
+    if logx_constants.IMAGE_FLAG == True:
 
-            image_file_path_string = get_image_file_path(caption_string, 'png')
+        image_file_path_string = get_image_file_path(caption_string, 'png')
         
-            dataframe_image.export(input_styler, image_file_path_string)
+        dataframe_image.export(input_styler, image_file_path_string)
 
         
-        return input_styler
-
-    except:
-        
-        print_and_log_text \
-            (f'The function, save_png_return_styler, in file {CONSTANT_LOCAL_FILE_NAME}, ' \
-             + f'could not save the image and return the styler for caption, {caption_string}.')
-
-        return None
+    return input_styler
 
 
 # In[8]:
@@ -302,27 +289,21 @@ def save_png_return_styler \
 
 def begin_program(program_designation_string = ''):
     
-    try:
-
-        create_directory(logx_constants.LOGS_DIRECTORY_PATH)
+    create_directory(logx_constants.LOGS_DIRECTORY_PATH)
         
-        create_directory(logx_constants.IMAGES_DIRECTORY_PATH)
+    create_directory(logx_constants.IMAGES_DIRECTORY_PATH)
 
-        set_program_designation(program_designation_string)
-        
-        open_log_file()
+    set_program_designation(program_designation_string)
 
-        message_string = 'Program execution begins...\n'
-        
-        if logx_constants.LOG_FLAG == True:
     
-            print_and_log_text(message_string)
+    open_log_file()
 
-    except:
+    
+    message_string = 'Program execution begins...\n'
         
-        print \
-            (f'The function, begin_program, in file {CONSTANT_LOCAL_FILE_NAME}, ' \
-             + f'could not begin program execution: {program_designation_string}')    
+    if logx_constants.LOG_FLAG == True:
+    
+        print_and_log_text(message_string) 
 
 
 # In[9]:
@@ -355,23 +336,15 @@ def begin_program(program_designation_string = ''):
 
 def end_program():
     
-    try:
-        
-        current_timestamp_string = current_timestamp_as_string()
+    current_timestamp_string = current_timestamp_as_string()
                 
-        message_string = f'Program execution ends at {current_timestamp_string}.\n\n\n\n'
+    message_string = f'Program execution ends at {current_timestamp_string}.\n\n\n\n'
         
-        if logx_constants.LOG_FLAG == True:
+    if logx_constants.LOG_FLAG == True:
             
-            print_and_log_text(message_string)
+        print_and_log_text(message_string)
 
-            logx_constants.log_txt_file.close()
-
-    except:
-        
-        print_and_log_text \
-            (f'The function, end_program, in file {CONSTANT_LOCAL_FILE_NAME}, ' \
-             + 'could not close the log file.')   
+        logx_constants.log_txt_file.close() 
 
 
 # In[10]:
@@ -540,21 +513,13 @@ def log_write_object(input_object):
 
 def create_directory(directory_string):
     
-    try:
+    exist_boolean = os.path.exists(directory_string)
     
-        exist_boolean = os.path.exists(directory_string)
-    
-        if exist_boolean == False:
+    if exist_boolean == False:
         
-            os.makedirs(directory_string)
+        os.makedirs(directory_string)
             
-            print(f'The script created directory, {directory_string}.\n')
-    
-    except:
-        
-        print \
-            (f'The function, create_directory, in file {CONSTANT_LOCAL_FILE_NAME}, ' \
-             + f'could not create the directory, {directory_string}.')
+        print(f'The script created directory, {directory_string}.\n')
 
 
 # In[15]:
@@ -587,29 +552,20 @@ def create_directory(directory_string):
 
 def open_log_file():
     
-    try:
+    current_date_string = current_date_as_string()
 
-        current_date_string = current_date_as_string()
+    program_designation_string = logx_constants.PROGRAM_DESIGNATION \
 
-        program_designation_string = logx_constants.PROGRAM_DESIGNATION \
+    logx_constants.LOG_FILE_PATH \
+        = logx_constants.LOGS_DIRECTORY_PATH \
+            + '/' \
+            + current_date_string \
+            + program_designation_string \
+            + logx_constants.BASE_LOG_FILE_NAME
 
-        logx_constants.LOG_FILE_PATH \
-            = logx_constants.LOGS_DIRECTORY_PATH \
-                + '/' \
-                + current_date_string \
-                + program_designation_string \
-                + logx_constants.BASE_LOG_FILE_NAME
-
-        if logx_constants.LOG_FLAG == True:
+    if logx_constants.LOG_FLAG == True:
         
-            logx_constants.log_txt_file = open(logx_constants.LOG_FILE_PATH, 'a')
-       
-
-    except:
-        
-        print \
-            (f'The function, open_log_file, in file {CONSTANT_LOCAL_FILE_NAME}, ' \
-             + f'could not open the log file: {logx_constants.LOG_FILE_PATH}.')
+        logx_constants.log_txt_file = open(logx_constants.LOG_FILE_PATH, 'a')
 
 
 # In[16]:
@@ -688,24 +644,16 @@ def save_plot_image \
          pad_inches_float = 0.5,
          image_format_string = 'png'):
 
-    try:
-        
-        if logx_constants.IMAGE_FLAG == True:
+    if logx_constants.IMAGE_FLAG == True:
 
-            image_file_path_string \
-                = get_image_file_path(caption_string, image_format_string)
+        image_file_path_string \
+            = get_image_file_path(caption_string, image_format_string)
 
-            plt.savefig \
-                (image_file_path_string, 
-                 dpi = dpi_integer, 
-                 bbox_inches = 'tight', 
-                 pad_inches = pad_inches_float)
-
-    except:
-        
-        print \
-            (f'The function, save_plot_image, in file {CONSTANT_LOCAL_FILE_NAME}, ' \
-             + f'could not save a plot to a file for caption, {caption_string}.')   
+        plt.savefig \
+            (image_file_path_string, 
+             dpi = dpi_integer, 
+             bbox_inches = 'tight', 
+             pad_inches = pad_inches_float)
 
 
 # In[18]:
@@ -744,23 +692,15 @@ def save_hvplot_image_to_html \
          height_integer = 550,
          width_integer = 1100):
     
-    try:
-        
-        if logx_constants.IMAGE_FLAG == True:
+    if logx_constants.IMAGE_FLAG == True:
 
-            temp_overlay = copy.copy(hvplot_overlay)
+        temp_overlay = copy.copy(hvplot_overlay)
     
-            temp_overlay.opts(width = width_integer, height = height_integer)
+        temp_overlay.opts(width = width_integer, height = height_integer)
         
-            image_file_path_string = get_image_file_path(caption_string, 'html')
+        image_file_path_string = get_image_file_path(caption_string, 'html')
             
-            hvplot.save(temp_overlay, image_file_path_string)
-    
-    except:
-        
-        print \
-            (f'The function, save_hvplot_image_to_html, in file {CONSTANT_LOCAL_FILE_NAME}, ' \
-             + f'could not save an hvplot to an HTML file for caption, {caption_string}.') 
+        hvplot.save(temp_overlay, image_file_path_string)
 
 
 # In[19]:
@@ -796,19 +736,11 @@ def save_plotly_image \
         (plotly_figure,
          caption_string):
 
-    try:
-        
-        if logx_constants.IMAGE_FLAG == True:
+    if logx_constants.IMAGE_FLAG == True:
 
-            image_file_path_string = get_image_file_path(caption_string, 'png')
+        image_file_path_string = get_image_file_path(caption_string, 'png')
 
-            plotly_figure.write_image(image_file_path_string)
-
-    except:
-        
-        print \
-            (f'The function, save_plotly_image, in file {CONSTANT_LOCAL_FILE_NAME}, ' \
-             + f'could not save a Plotly image to a file for caption, {caption_string}.')   
+        plotly_figure.write_image(image_file_path_string)
 
 
 # In[ ]:

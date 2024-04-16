@@ -88,70 +88,59 @@ def return_standard_format_styler \
          precision_integer = 2,
          hide_index_boolean = True):
     
-    try:
-        
-        temp_dataframe = input_dataframe.copy()
+    temp_dataframe = input_dataframe.copy()
         
         
-        if hide_index_boolean == True:
+    if hide_index_boolean == True:
             
-            return \
-                temp_dataframe \
-                    .style \
-                    .set_caption(caption_string) \
-                    .set_table_styles \
-                        ([dict \
-                             (selector = 'caption',
-                              props = [('color', 'black'),
-                                       ('font-size', '20px'),
-                                       ('font-style', 'bold'),
-                                       ('text-align', 'center')])]) \
-                    .set_properties \
-                         (**{'text-align':
-                            'center',
-                            'border':
-                            '1.3px solid red',
-                            'color':
-                            'blue'}) \
-                    .format \
-                        (precision = precision_integer, 
-                         thousands = ',', 
-                         decimal = '.') \
-                    .hide()
+        return \
+            temp_dataframe \
+                .style \
+                .set_caption(caption_string) \
+                .set_table_styles \
+                    ([dict \
+                        (selector = 'caption',
+                         props = [('color', 'black'),
+                                  ('font-size', '20px'),
+                                  ('font-style', 'bold'),
+                                  ('text-align', 'center')])]) \
+                .set_properties \
+                    (**{'text-align':
+                        'center',
+                        'border':
+                        '1.3px solid red',
+                        'color':
+                        'blue'}) \
+                .format \
+                    (precision = precision_integer, 
+                     thousands = ',', 
+                     decimal = '.') \
+                .hide()
             
-        else:
+    else:
             
-            return \
-                temp_dataframe \
-                    .style \
-                    .set_caption(caption_string) \
-                    .set_table_styles \
-                        ([dict \
-                             (selector = 'caption',
-                              props = [('color', 'black'),
-                                       ('font-size', '20px'),
-                                       ('font-style', 'bold'),
-                                       ('text-align', 'center')])]) \
-                    .set_properties \
-                         (**{'text-align':
-                            'center',
-                            'border':
-                            '1.3px solid red',
-                            'color':
-                            'blue'}) \
-                    .format \
-                        (precision = precision_integer, 
-                         thousands = ',', 
-                         decimal = '.')
-        
-    except:
-            
-        logx.print_and_log_text \
-            ('The function, return_standard_format_styler, '
-             + f'in source file, {CONSTANT_LOCAL_FILE_NAME}, '
-             + 'was unable to format a dataframe as a styler object.')
-        
-        return None
+        return \
+            temp_dataframe \
+                .style \
+                .set_caption(caption_string) \
+                .set_table_styles \
+                    ([dict \
+                        (selector = 'caption',
+                         props = [('color', 'black'),
+                                  ('font-size', '20px'),
+                                  ('font-style', 'bold'),
+                                  ('text-align', 'center')])]) \
+                .set_properties \
+                    (**{'text-align':
+                        'center',
+                        'border':
+                        '1.3px solid red',
+                        'color':
+                        'blue'}) \
+                .format \
+                    (precision = precision_integer, 
+                     thousands = ',', 
+                     decimal = '.')
 
 
 # In[4]:
@@ -186,26 +175,14 @@ def save_image_and_return_styler \
         (input_styler,
          caption_string):
     
-    try:
-        
-        if logx_constants.IMAGE_FLAG == True:
+    if logx_constants.IMAGE_FLAG == True:
 
-            image_file_path_string = logx.get_image_file_path(caption_string, 'png')
+        image_file_path_string = logx.get_image_file_path(caption_string, 'png')
             
-            dataframe_image.export \
-                (input_styler, image_file_path_string, max_rows = -1, max_cols = -1)
+        dataframe_image.export \
+            (input_styler, image_file_path_string, max_rows = -1, max_cols = -1)
         
-        return input_styler
-        
-    except:
-        
-        logx.print_and_log_text \
-            ('The function, save_image_and_return_styler, '
-             + f'in source file, {CONSTANT_LOCAL_FILE_NAME}, '
-             + 'cannot save an image of a styler object ' \
-             + 'then return it to the caller.')
-        
-        return None
+    return input_styler
 
 
 # In[5]:
@@ -286,53 +263,42 @@ def return_formatted_table \
 
 def return_summary_statistics_as_dataframe(data_series):
 
-    try:
-        
-        # This line of code allocates the distribution for the quartiles.
-        quartiles_series = data_series.quantile([0.25, 0.50, 0.75])
+    # This line of code allocates the distribution for the quartiles.
+    quartiles_series = data_series.quantile([0.25, 0.50, 0.75])
     
-        # These lines of code establish the lower quartile and the upper quartile.
-        lower_quartile_float = quartiles_series[0.25]
+    # These lines of code establish the lower quartile and the upper quartile.
+    lower_quartile_float = quartiles_series[0.25]
 
-        upper_quartile_float = quartiles_series[0.75]
+    upper_quartile_float = quartiles_series[0.75]
     
-        # This line of code calculates the interquartile range (IQR).
-        interquartile_range_float = upper_quartile_float - lower_quartile_float
+    # This line of code calculates the interquartile range (IQR).
+    interquartile_range_float = upper_quartile_float - lower_quartile_float
 
-        # These line of code calculate the lower bound and upper bound 
-        # of the distribution.
-        lower_bound_float = lower_quartile_float - (1.5*interquartile_range_float)
+    # These line of code calculate the lower bound and upper bound 
+    # of the distribution.
+    lower_bound_float = lower_quartile_float - (1.5*interquartile_range_float)
     
-        upper_bound_float = upper_quartile_float + (1.5*interquartile_range_float)
+    upper_bound_float = upper_quartile_float + (1.5*interquartile_range_float)
     
-        # This line of code establishes a list of outliers.
-        outliers_series \
-            = data_series.loc[(data_series < lower_bound_float) | (data_series > upper_bound_float)]
+    # This line of code establishes a list of outliers.
+    outliers_series \
+        = data_series.loc[(data_series < lower_bound_float) | (data_series > upper_bound_float)]
         
-        # This line of code finds the number of outliers.
-        number_of_outliers_integer = len(outliers_series)
+    # This line of code finds the number of outliers.
+    number_of_outliers_integer = len(outliers_series)
   
-        # These lines of code create a list of all the summary statistics and store
-        # the data in a DataFrame.
-        statistics_dictionary_list \
-            = [{'Lower Quartile': lower_quartile_float,
-                'Upper Quartile': upper_quartile_float,
-                'Interquartile Range': interquartile_range_float,
-                'Median': quartiles_series[0.5],
-                'Lower Boundary': lower_bound_float,
-                'Upper Boundary': upper_bound_float,
-                'Number of Outliers': number_of_outliers_integer}]
+    # These lines of code create a list of all the summary statistics and store
+    # the data in a DataFrame.
+    statistics_dictionary_list \
+        = [{'Lower Quartile': lower_quartile_float,
+            'Upper Quartile': upper_quartile_float,
+            'Interquartile Range': interquartile_range_float,
+            'Median': quartiles_series[0.5],
+            'Lower Boundary': lower_bound_float,
+            'Upper Boundary': upper_bound_float,
+            'Number of Outliers': number_of_outliers_integer}]
   
-        return pd.DataFrame(statistics_dictionary_list)
-        
-    except:
-            
-        logx.print_and_log_text \
-            ('The function, return_summary_statistics_as_dataframe, '
-             + f'in source file, {CONSTANT_LOCAL_FILE_NAME}, '
-             + 'cannot return summary statistics as a dataframe.')
-            
-        return None
+    return pd.DataFrame(statistics_dictionary_list)
 
 
 # In[7]:
@@ -369,27 +335,16 @@ def return_formatted_rows \
         (input_styler, 
          format_dictionary):
     
-    try:
-    
-        for key, value in format_dictionary.items():
+    for key, value in format_dictionary.items():
         
-            row_number = input_styler.index.get_loc(key)
+        row_number = input_styler.index.get_loc(key)
 
-            for column_number in range(len(input_styler.columns)):
+        for column_number in range(len(input_styler.columns)):
             
-                input_styler._display_funcs[(row_number, column_number)] = value
+            input_styler._display_funcs[(row_number, column_number)] = value
             
             
-        return input_styler
-
-    except:
-        
-        logx.print_and_log_text \
-            ('The function, return_formatted_rows, '
-             + f'in source file, {CONSTANT_LOCAL_FILE_NAME}, '
-             + 'was unable to format the rows in a pandas styler.')
-        
-        return None
+    return input_styler
 
 
 # In[8]:
@@ -425,46 +380,35 @@ def return_dataframe_description \
         (input_dataframe,
          caption_string):
     
-    try:
-        
-        description_dataframe = input_dataframe.describe()
+    description_dataframe = input_dataframe.describe()
     
-        format_dictionary \
-            = {'count': lambda x: f'{x:,.0f}',
-               'mean': lambda x: f'{x:,.2f}',
-               'std': lambda x: f'{x:,.2f}',
-               'min': lambda x: f'{x:,.0f}',
-               '25%': lambda x: f'{x:,.2f}',
-               '50%': lambda x: f'{x:,.2f}',
-               '75%': lambda x: f'{x:,.2f}',
-               'max': lambda x: f'{x:,.0f}'}
+    format_dictionary \
+        = {'count': lambda x: f'{x:,.0f}',
+           'mean': lambda x: f'{x:,.2f}',
+           'std': lambda x: f'{x:,.2f}',
+           'min': lambda x: f'{x:,.0f}',
+           '25%': lambda x: f'{x:,.2f}',
+           '50%': lambda x: f'{x:,.2f}',
+           '75%': lambda x: f'{x:,.2f}',
+           'max': lambda x: f'{x:,.0f}'}
 
-        description_styler \
-            = return_formatted_rows(description_dataframe.style, format_dictionary)
+    description_styler \
+        = return_formatted_rows(description_dataframe.style, format_dictionary)
         
-        description_styler \
-            .set_caption(caption_string) \
-            .set_table_styles \
-                ([{'selector': 'caption', 
-                   'props': [('color', 'black'), 
-                             ('font-size', '16px'),
-                             ('font-style', 'bold'),
-                             ('text-align', 'center')]}]) \
-            .set_properties \
-                (**{'text-align': 'center',
-                    'border': '1.3px solid red',
-                    'color': 'blue'})
+    description_styler \
+        .set_caption(caption_string) \
+        .set_table_styles \
+            ([{'selector': 'caption', 
+               'props': [('color', 'black'), 
+                         ('font-size', '16px'),
+                         ('font-style', 'bold'),
+                         ('text-align', 'center')]}]) \
+        .set_properties \
+            (**{'text-align': 'center',
+                'border': '1.3px solid red',
+                'color': 'blue'})
             
-        return description_styler
-        
-    except:
-        
-        logx.print_and_log_text \
-            ('The function, return_dataframe_description, '
-             + f'in source file, {CONSTANT_LOCAL_FILE_NAME}, '
-             + "cannot display the DataFrame's description.")
-        
-        return None 
+    return description_styler
 
 
 # In[9]:
@@ -535,21 +479,12 @@ def return_formatted_description \
 
 def display_dataframe_column_counts(input_dataframe):
 
-    try:
-
-        for i, column in enumerate(student_loan_dataframe.columns):
+    for i, column in enumerate(student_loan_dataframe.columns):
         
-            count_integer = student_loan_dataframe[column].nunique()
+        count_integer = student_loan_dataframe[column].nunique()
         
-            logx.print_and_log_text \
-                ('\033[1m' + f'{column}: ' + '{:,}\n'.format(count_integer) + '\033[0m')
-
-    except:
-
         logx.print_and_log_text \
-            ('The function, display_dataframe_column_counts, '
-             + f'in source file, {CONSTANT_LOCAL_FILE_NAME}, '
-             + "cannot display the DataFrame's column counts.")
+            ('\033[1m' + f'{column}: ' + '{:,}\n'.format(count_integer) + '\033[0m')
 
 
 # In[11]:
@@ -582,23 +517,14 @@ def display_dataframe_column_counts(input_dataframe):
 
 def display_dataframe_column_unique_values(input_dataframe):
 
-    try:
-
-        for i, column in enumerate(input_dataframe.columns):
+    for i, column in enumerate(input_dataframe.columns):
         
-            value_string_list = input_dataframe[column].unique().tolist()
+        value_string_list = input_dataframe[column].unique().tolist()
         
-            logx.print_and_log_text \
-                ('\033[1m' + f'{column}:\n'
-                 + f'{sorted(value_string_list, reverse = False)}\n\n'
-                 + '\033[0m')
-    
-    except:
-
         logx.print_and_log_text \
-            ('The function, display_dataframe_column_unique_values, '
-             + f'in source file, {CONSTANT_LOCAL_FILE_NAME}, '
-             + 'cannot display the DataFrame column unique values.')  
+            ('\033[1m' + f'{column}:\n'
+             + f'{sorted(value_string_list, reverse = False)}\n\n'
+             + '\033[0m')
 
 
 # In[12]:
@@ -634,25 +560,16 @@ def display_series_unique_value_counts \
         (input_series,
          series_name_string = 'output_series'):
 
-    try:
+    output_series = input_series.value_counts().sort_values(ascending = False)
 
-        output_series = input_series.value_counts().sort_values(ascending = False)
+    output_series.name = series_name_string
 
-        output_series.name = series_name_string
+    for i, v in output_series.items():
 
-        for i, v in output_series.items():
-
-            logx.print_and_log_text('\033[1m' + str(i) + '\t' + str(v) + '\n' + '\033[0m')
+        logx.print_and_log_text('\033[1m' + str(i) + '\t' + str(v) + '\n' + '\033[0m')
 
 
-        return output_series
-
-    except:
-
-        logx.print_and_log_text \
-            ('The function, display_series_unique_value_counts, '
-             + f'in source file, {CONSTANT_LOCAL_FILE_NAME}, '
-             + 'cannot display the unique value counts of a series.')  
+    return output_series
 
 
 # In[ ]:
