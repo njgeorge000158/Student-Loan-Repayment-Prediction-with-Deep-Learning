@@ -1,4 +1,4 @@
-This folder holds the images for the IPython Notebook, spam_detector.ipynb.
+This folder holds the images for the IPython Notebook, student_loans.ipynb.
 
 ----
 
