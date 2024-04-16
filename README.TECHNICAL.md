@@ -84,21 +84,15 @@ Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
 
 #### main branch 
 
-|&rarr; [./classificationsx.py](./classificationsx.py)
-
 |&rarr; [./logx_constants.py](./logx_constants.py)
 
 |&rarr; [./logx.py](./logx.py)
 
 |&rarr; [./pandas_processx.py](./pandas_processx.py)
 
-|&rarr; [./spam_detector_constants.py](./spam_detector_constants.py)
+|&rarr; [./student_loans_constants.py](./student_loans_constants.py)
 
-|&rarr; [./spam_detector_old.ipynb](./spam_detector_old.ipynb)
-
-|&rarr; [./spam_detector_optimization.ipynb](./spam_detector_optimization.ipynb)
-
-|&rarr; [./spam_detector.ipynb](./spam_detector.ipynb)
+|&rarr; [./student_loans.ipynb](./student_loans.ipynb)
 
 |&rarr; [./README.TECHNICAL.md](./README.TECHNICAL.md)
 
@@ -106,191 +100,23 @@ Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
 
 |&rarr; [./images/](./images/)
 
-  &emsp; |&rarr; [./images/spam_detector_optimizationTable12SpamDataTable.png](./images/spam_detector_optimizationTable12SpamDataTable.png)
+  &emsp; |&rarr; [./images/student_loansTable12StudentLoanTable.png](./images/student_loansTable12StudentLoanTable.png)
   
-  &emsp; |&rarr; [./images/spam_detector_optimizationTable131SpamYSeries.png](./images/spam_detector_optimizationTable131SpamYSeries.png)
+  &emsp; |&rarr; [./images/student_loansTable21StudentLoanXDataFrame.png](./images/student_loansTable21StudentLoanXDataFrame.png)
 
-  &emsp; |&rarr; [./images/spam_detector_optimizationTable132SpamXDataFrame.png](./images/spam_detector_optimizationTable132SpamXDataFrame.png)
+  &emsp; |&rarr; [./images/student_loansTable43ModelPredictionsvsActualValues.png](./images/student_loansTable43ModelPredictionsvsActualValues.png)
 
-  &emsp; |&rarr; [./images/spam_detector_optimizationTable151SpamScaledXVariableTrainingData.png](./images/spam_detector_optimizationTable151SpamScaledXVariableTrainingData.png)
-
-  &emsp; |&rarr; [./images/spam_detector_optimizationTable152SpamScaledXVariableTestData.png](./images/spam_detector_optimizationTable152SpamScaledXVariableTestData.png)
-
-  &emsp; |&rarr; [./images/spam_detector_optimizationTable271XTrainingScaledUndersampledData.png](./images/spam_detector_optimizationTable271XTrainingScaledUndersampledData.png)
-
-  &emsp; |&rarr; [./images/spam_detector_optimizationTable272XTrainingScaledOversampledData.png](./images/spam_detector_optimizationTable272XTrainingScaledOversampledData.png)
-
-  &emsp; |&rarr; [./images/spam_detector_optimizationTable273XTrainingScaledClusterCentroidsData.png](./images/spam_detector_optimizationTable273XTrainingScaledClusterCentroidsData.png)
-
-  &emsp; |&rarr; [./images/spam_detector_optimizationTable274XTrainingScaledSMOTEData.png](./images/spam_detector_optimizationTable274XTrainingScaledSMOTEData.png)
-
-  &emsp; |&rarr; [./images/spam_detector_optimizationTable275XTrainingScaledSMOTEENData.png](./images/spam_detector_optimizationTable275XTrainingScaledSMOTEENData.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable12SpamDataTable.png](./images/spam_detectorTable12SpamDataTable.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable131SpamYSeries.png](./images/spam_detectorTable131SpamYSeries.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable132SpamXDataFrame.png](./images/spam_detectorTable132SpamXDataFrame.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable151SpamScaledXVariableTrainingData.png](./images/spam_detectorTable151SpamScaledXVariableTrainingData.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable152SpamScaledXVariableTestData.png](./images/spam_detectorTable152SpamScaledXVariableTestData.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable271XTrainingScaledUndersampledData.png](./images/spam_detectorTable271XTrainingScaledUndersampledData.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable272XTrainingScaledOversampledData.png](./images/spam_detectorTable272XTrainingScaledOversampledData.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable273XTrainingScaledClusterCentroidsData.png](./images/spam_detectorTable273XTrainingScaledClusterCentroidsData.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable274XTrainingScaledSMOTEData.png](./images/spam_detectorTable274XTrainingScaledSMOTEData.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable275XTrainingScaledSMOTEENData.png](./images/spam_detectorTable275XTrainingScaledSMOTEENData.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable971ModelPerformanceMatrix.png](./images/spam_detectorTable971ModelPerformanceMatrix.png)
-
-  &emsp; |&rarr; [./images/spam_detectorTable972ModelPerformanceRankings.png](./images/spam_detectorTable972ModelPerformanceRankings.png)
-  
   &emsp; |&rarr; [./images/README.md](./images/README.md)
   
 |&rarr; [./logs/](./logs/)
 
-  &emsp; |&rarr; [./logs/20240415spam_detector_log.txt](./logs/20240415spam_detector_log.txt)
-
-  &emsp; |&rarr; [./logs/20240415spam_detector_optimization_log.txt](./logs/20240415spam_detector_optimization_log.txt)
+  &emsp; |&rarr; [./logs/20240416student_loans_log.txt](./logs/20240416student_loans_log.txt)
 
   &emsp; |&rarr; [./logs/README.md](./logs/README.md)
 
 |&rarr; [./resources/](./resources/)
 
-  &emsp; |&rarr; [./resources/dt_centroids_grid_search_model.sav](./resources/dt_centroids_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/dt_centroids_model.sav](./resources/dt_centroids_model.sav)
-
-  &emsp; |&rarr; [./resources/dt_grid_search_model.sav](./resources/dt_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/dt_model.sav](./resources/dt_model.sav)
-
-  &emsp; |&rarr; [./resources/dt_oversampled_grid_search_model.sav](./resources/dt_oversampled_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/dt_smote_grid_search_model.sav](./resources/dt_smote_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/dt_smote_model.sav](./resources/dt_smote_model.sav)
-
-  &emsp; |&rarr; [./resources/dt_smoteen_grid_search_model.sav](./resources/dt_smoteen_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/dt_smoteen_model.sav](./resources/dt_smoteen_model.sav)
-
-  &emsp; |&rarr; [./resources/dt_undersampled_grid_search_model.sav](./resources/dt_undersampled_grid_search_model.sav)
-  
-  &emsp; |&rarr; [./resources/dt_undersampled_model.sav](./resources/dt_undersampled_model.sav)
-
-  &emsp; |&rarr; [./resources/gnb_centroids_model.sav](./resources/gnb_centroids_model.sav)
-
-  &emsp; |&rarr; [./resources/gnb_model.sav](./resources/gnb_model.sav)
-
-  &emsp; |&rarr; [./resources/gnb_oversampled_model.sav](./resources/gnb_oversampled_model.sav)
-
-  &emsp; |&rarr; [./resources/gnb_smote_model.sav](./resources/gnb_smote_model.sav)
-
-  &emsp; |&rarr; [./resources/gnb_smoteen_model.sav](./resources/gnb_smoteen_model.sav)
-
-  &emsp; |&rarr; [./resources/gnb_undersampled_model.sav](./resources/gnb_undersampled_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_centroids_grid_search_model.sav](./resources/knn_centroids_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_centroids_model.sav](./resources/knn_centroids_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_grid_search_model.sav](./resources/knn_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_model.sav](./resources/knn_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_oversampled_grid_search_model.sav](./resources/knn_oversampled_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_oversampled_model.sav](./resources/knn_oversampled_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_smote_grid_search_model.sav](./resources/knn_smote_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_smote_model.sav](./resources/knn_smote_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_smoteen_grid_search_model.sav](./resources/knn_smoteen_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_smoteen_model.sav](./resources/knn_smoteen_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_undersampled_grid_search_model.sav](./resources/knn_undersampled_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/knn_undersampled_model.sav](./resources/knn_undersampled_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_centroids_grid_search_model.sav](./resources/lr_centroids_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_centroids_model.sav](./resources/lr_centroids_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_grid_search_model.sav](./resources/lr_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_model.sav](./resources/lr_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_oversampled_grid_search_model.sav](./resources/lr_oversampled_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_oversampled_model.sav](./resources/lr_oversampled_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_smote_grid_search_model.sav](./resources/lr_smote_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_smote_model.sav](./resources/lr_smote_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_smoteen_grid_search_model.sav](./resources/lr_smoteen_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_smoteen_model.sav](./resources/lr_smoteen_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_undersampled_grid_search_model.sav](./resources/lr_undersampled_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/lr_undersampled_model.sav](./resources/lr_undersampled_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_centroids_grid_search_model.sav](./resources/rf_centroids_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_centroids_model.sav](./resources/rf_centroids_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_grid_search_model.sav](./resources/rf_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_model.sav](./resources/rf_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_oversampled_grid_search_model.sav](./resources/rf_oversampled_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_oversampled_model.sav](./resources/rf_oversampled_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_smote_grid_search_model.sav](./resources/rf_smote_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_smote_model.sav](./resources/rf_smote_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_smoteen_grid_search_model.sav](./resources/rf_smoteen_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_smoteen_model.sav](./resources/rf_smoteen_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_undersampled_grid_search_model.sav](./resources/rf_undersampled_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/rf_undersampled_model.sav](./resources/rf_undersampled_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_centroids_grid_search_model.sav](./resources/svm_centroids_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_centroids_model.sav](./resources/svm_centroids_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_grid_search_model.sav](./resources/svm_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_model.sav](./resources/svm_model.sav)
-  
-  &emsp; |&rarr; [./resources/svm_oversampled_grid_search_model.sav](./resources/svm_oversampled_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_oversampled_model.sav](./resources/svm_oversampled_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_smote_grid_search_model.sav](./resources/svm_smote_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_smote_model.sav](./resources/svm_smote_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_smoteen_grid_search_model.sav](./resources/svm_smoteen_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_smoteen_model.sav](./resources/svm_smoteen_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_undersampled_grid_search_model.sav](./resources/svm_undersampled_grid_search_model.sav)
-
-  &emsp; |&rarr; [./resources/svm_undersampled_model.sav](./resources/svm_undersampled_model.sav)
+  &emsp; |&rarr; [./resources/nn_student_loans_model.keras](./resources/nn_student_loans_model.keras)
 
   &emsp; |&rarr; [./resources/README.md](./resources/README.md)
 
@@ -311,6 +137,8 @@ Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
 [Python Documentation](https://docs.python.org/3/contents.html)
 
 [scikit-learn Documentation](https://scikit-learn.org/stable/)
+
+[TensorFlow Documentation](https://www.tensorflow.org/guide)
 
 ----
 
