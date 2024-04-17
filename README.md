@@ -20,6 +20,8 @@ The purpose of this analysis is to create a regression model using deep learning
 
 - To achieve the target performance, I configured the neural network configuration based on the results of an optimization script, student_loans_optimization_search.ipynb.
 
+<img width="483" alt="Screenshot 2024-04-17 at 1 24 19 PM" src="https://github.com/njgeorge000158/Student-Loan-Repayment-Prediction-with-Deep-Learning/assets/137228821/e53a7e31-2db4-4085-ba42-3564a256b89f">
+
 - The model has an input layer, a hidden layer, and the output layer with two dropouts.  The input layer and hidden layer consist of 98 and 45 neurons, respectively, and use tanh activation functions.  Because this is a regression model, the output layer has 1 neuron and uses a linear activation function.  The structure maintains the ability to learn patterns effectively while striking a balance between complexity and overfitting.
 
 <img width="831" alt="Screenshot 2024-04-17 at 1 17 34 PM" src="https://github.com/njgeorge000158/Student-Loan-Repayment-Prediction-with-Deep-Learning/assets/137228821/8efa395d-237e-407c-906b-49635fc67a53">
