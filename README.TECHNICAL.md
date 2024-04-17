@@ -8,7 +8,7 @@
 
 If the computer has Anaconda, Jupyter Notebook, and a recent version of Python, the IPython notebook already has the following dependencies installed: datetime, io, json, matplotlib, numpy, pandas, pathlib, os, pandas, requests, requests_html, scipy.
 
-In addition to those modules, the IPython notebook needs the following to execute: holoviews, hvplot, geoviews, geopy, aspose-words, dataframe-image, scikit-learn, tensorflow, and silence_tensorflow.
+In addition to those modules, the IPython notebook needs the following to execute: holoviews, hvplot, geoviews, geopy, aspose-words, dataframe-image, keras_tuner, scikit-learn, tensorflow, silence_tensorflow, and warnings.
 
 Here are the requisite Terminal commands for the installation of these peripheral modules:
 
@@ -24,11 +24,15 @@ pip3 install -U aspose-words
 
 pip3 install -U dataframe-image
 
+pip3 install -U keras_tuner
+
 pip3 install -U scikit-learn
 
 pip3 install -U tensorflow
 
 pip3 install -U silence_tensorflow
+
+pip3 install -U warnings
 
 ----
 
@@ -92,6 +96,8 @@ Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
 
 |&rarr; [./student_loans_constants.py](./student_loans_constants.py)
 
+|&rarr; [./student_loans_optimization_search.ipynb](./student_loans_optimization_search.ipynb)
+
 |&rarr; [./student_loans.ipynb](./student_loans.ipynb)
 
 |&rarr; [./README.TECHNICAL.md](./README.TECHNICAL.md)
@@ -99,6 +105,10 @@ Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
 |&rarr; [./README.md](./README.md)
 
 |&rarr; [./images/](./images/)
+
+  &emsp; |&rarr; [./images/student_loans_optimization_searchTable12StudentLoanTable.png](./images/student_loans_optimization_searchTable12StudentLoanTable.png)
+
+  &emsp; |&rarr; [./images/student_loans_optimization_searchTable21StudentLoanFeaturesDataFrame.png](./images/student_loans_optimization_searchTable21StudentLoanFeaturesDataFrame.png)
 
   &emsp; |&rarr; [./images/student_loansTable12StudentLoanTable.png](./images/student_loansTable12StudentLoanTable.png)
   
@@ -110,7 +120,9 @@ Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
   
 |&rarr; [./logs/](./logs/)
 
-  &emsp; |&rarr; [./logs/20240416student_loans_log.txt](./logs/20240416student_loans_log.txt)
+  &emsp; |&rarr; [./logs/2024041720240417student_loans_log.txt](./logs/20240417student_loans_log.txt)
+
+  &emsp; |&rarr; [./logs/20240417student_loans_optimization_search_log.txt](./logs/20240417student_loans_optimization_search_log.txt)
 
   &emsp; |&rarr; [./logs/README.md](./logs/README.md)
 
