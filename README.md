@@ -32,9 +32,13 @@ Once implemented, the optimized model attained a mean squared error (mse) and lo
 
 <img width="1011" alt="Screenshot 2024-04-17 at 1 19 07 PM" src="https://github.com/njgeorge000158/Student-Loan-Repayment-Prediction-with-Deep-Learning/assets/137228821/81925ad2-9453-4f08-b60b-c6996c2870d4">
 
+When I compared the a sample of the actual values to the model predictions, I observed that the values where either the same or off by one.
+
+<img width="161" alt="Screenshot 2024-04-17 at 1 31 48 PM" src="https://github.com/njgeorge000158/Student-Loan-Repayment-Prediction-with-Deep-Learning/assets/137228821/0f4236b5-8b69-42f4-9af0-766f053aecc1">
+
 ## **Summary**
 
-Overall, the sequential neural network model successfully predicted the student loan applicant credit ranking with a mean squared erro of 33.3%.  If I were to attempt to improve performance in the future, I would, among other things, modify the optimization program to include other neural network configurations beyond sequential.
+Overall, the sequential neural network model successfully predicts the student loan applicant credit ranking with a mean square error of 33.3%, which translates into the actual score or an off-by-one score.
 
 ----
 
