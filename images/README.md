@@ -1,4 +1,4 @@
-This folder holds the images for the IPython Notebook, student_loans.ipynb.
+This folder holds the images for the IPython Notebooks, student_loans.ipynb and student_loans_optimization_search.ipynb.
 
 ----
 
