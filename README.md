@@ -32,7 +32,7 @@ Once implemented, the optimized model attained a mean squared error (mse) and lo
 
 <img width="1011" alt="Screenshot 2024-04-17 at 1 19 07 PM" src="https://github.com/njgeorge000158/Student-Loan-Repayment-Prediction-with-Deep-Learning/assets/137228821/81925ad2-9453-4f08-b60b-c6996c2870d4">
 
-When I compared the a sample of the actual values to the model predictions, I observed that the values where either the same or off by one.
+When I compared the a sample of the actual values to the model predictions, I observed that the values where either the same or off-by-one.
 
 <img width="161" alt="Screenshot 2024-04-17 at 1 31 48 PM" src="https://github.com/njgeorge000158/Student-Loan-Repayment-Prediction-with-Deep-Learning/assets/137228821/0f4236b5-8b69-42f4-9af0-766f053aecc1">
 
