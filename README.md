@@ -6,7 +6,7 @@
 
 ## **Overview of the Analysis**
 
-The purpose of this analysis is to create a regression model using deep learning techniques to predict if a particular company will succeed in designating the appropriate credit rating for a student loan applicant. The model draws on a dataset of 1,599 applicants that have received funding in the past.
+The purpose of this analysis is to create a regression model using deep learning techniques to predict if a particular company will succeed in designating the appropriate credit rating for a student loan applicant. The model draws on a dataset of 1,599 applicants that have received funding.
 
 ## **Results**
 
