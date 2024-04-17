@@ -18,7 +18,7 @@ The purpose of this analysis is to create a regression model using deep learning
 
 ### Compiling, Training, and Evaluating the Model
 
-- To achieve the target performance, I made changes to the neural network configuration based on the results of an optimization script, student_loans_optimization_search.ipynb.
+- To achieve the target performance, I configured the neural network configuration based on the results of an optimization script, student_loans_optimization_search.ipynb.
 
 - The model has an input layer, a hidden layer, and the output layer with two dropouts.  The input layer and hidden layer consist of 98 and 45 neurons, respectively, and use tanh activation functions.  Because this is a regression model, the output layer has 1 neuron and uses a linear activation function.  The structure maintains the ability to learn patterns effectively while striking a balance between complexity and overfitting.
 
