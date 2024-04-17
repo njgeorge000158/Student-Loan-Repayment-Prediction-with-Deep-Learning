@@ -38,7 +38,7 @@ When I compared a sample of model predictions to actual scores, I observed that 
 
 ## **Summary**
 
-Overall, the sequential neural network model successfully predicts the student loan applicant credit ranking with a mean square error of 33.3%, which translates into the actual score or an off-by-one score.
+Overall, the sequential neural network model successfully predicts the student loan applicant credit ranking with a mean square error of 33.3%, which translates into the actual ranking or an off-by-one value.
 
 ----
 
