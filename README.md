@@ -34,7 +34,7 @@ Once implemented, the optimized model attained a mean squared error (mse) and lo
 
 ## **Summary**
 
-Overall, through optimization, the model successfully predicted the student loan applicant credit ranking with a mean squared erro of 33.3%.  If I were to attempt to improve performance in the future, I would, among other things, modify the optimization program to include other neural network configurations beyond sequential.
+Overall, the sequential neural network model successfully predicted the student loan applicant credit ranking with a mean squared erro of 33.3%.  If I were to attempt to improve performance in the future, I would, among other things, modify the optimization program to include other neural network configurations beyond sequential.
 
 ----
 
