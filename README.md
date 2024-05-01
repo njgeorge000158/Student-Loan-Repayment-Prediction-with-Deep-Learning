@@ -6,7 +6,7 @@
 
 ## **Overview of the Analysis**
 
-The purpose of this analysis is to create a regression model using deep learning techniques to predict if a particular company will succeed in designating the appropriate credit rating for a student loan applicant. The model draws on a dataset of 1,599 applicants that have received funding.
+The purpose of this analysis is to create a regression model to predict if a particular company will succeed in designating the appropriate credit rating for a student loan applicant. The model draws on a dataset of 1,599 applicants that have received funding.
 
 ## **Results**
 
@@ -18,7 +18,7 @@ The purpose of this analysis is to create a regression model using deep learning
 
 ### Compiling, Training, and Evaluating the Model
 
-- To achieve the target performance, I configured the neural network configuration based on the results of an optimization script, student_loans_optimization_search.ipynb.
+- To achieve the target performance, I configured the neural network configuration based on the results of an optimization script, student_loans_hyperparameters_optimization_colab.ipynb.
 
 <img width="483" alt="Screenshot 2024-04-17 at 1 24 19 PM" src="https://github.com/njgeorge000158/Student-Loan-Repayment-Prediction-with-Deep-Learning/assets/137228821/e53a7e31-2db4-4085-ba42-3564a256b89f">
 
