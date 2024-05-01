@@ -3,11 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# deep_learningx.py
-# deep_learningx_constants.py
-
 # C extensions
 *.so
+
+logx.py
+pandasx.py
+timex.py
 
 # Distribution / packaging
 .Python
