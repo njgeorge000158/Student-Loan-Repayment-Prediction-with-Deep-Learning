@@ -1,4 +1,4 @@
-This folder holds the input/output files for the student_loans_colab, student_loans.ipynb and student_loans_hyperparameters_optimization_colab.ipynb.
+This folder holds the input/output files for the Google Colab Notebooks: student_loans_colab.ipynb and student_loans_hyperparameters_optimization_colab.ipynb.
 
 ----
 
