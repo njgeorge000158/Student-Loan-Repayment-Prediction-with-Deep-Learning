@@ -6,33 +6,7 @@
 
 ----
 
-If the computer has Anaconda, Jupyter Notebook, and a recent version of Python, the IPython notebook already has the following dependencies installed: datetime, io, json, matplotlib, numpy, pandas, pathlib, os, pandas, requests, requests_html, scipy.
-
-In addition to those modules, the IPython notebook needs the following to execute: holoviews, hvplot, geoviews, geopy, aspose-words, dataframe-image, keras_tuner, scikit-learn, tensorflow, silence_tensorflow, and warnings.
-
-Here are the requisite Terminal commands for the installation of these peripheral modules:
-
-pip3 install -U holoviews
-
-pip3 install -U hvplot
-
-pip3 install -U geoviews
-
-pip3 install -U geopy
-
-pip3 install -U aspose-words
-
-pip3 install -U dataframe-image
-
-pip3 install -U keras_tuner
-
-pip3 install -U scikit-learn
-
-pip3 install -U tensorflow
-
-pip3 install -U silence_tensorflow
-
-pip3 install -U warnings
+This project only requires running the Google Colab Notebook, spam_detector.ipynb.
 
 ----
 
@@ -40,17 +14,17 @@ pip3 install -U warnings
 
 ----
 
-The IPython notebook, student_loans.ipynb, requires the following Python scripts with it in the same folder:
-
-logx_constants.py
+The Google Colab Notebook, student_loans_colab.ipynb, requires the following Python scripts with it in the same folder:
 
 logx.py
 
-pandas_processx.py
+pandasx.py
 
 student_loans_constants.py
 
-If the folders, logs and images, are not present, the IPython notebook will create them.  The IPython notebook, student_loans.ipynb, requires the csv file, student_loans.csv, found in the link, [https://static.bc-edx.com/mbc/ai/m4/datasets/spam-data.csv](https://static.bc-edx.com/mbc/ai/m6/datasets/student_loans.csv), to execute. To place the IPython notebook in Log Mode or Image Mode set the parameter for the appropriate function in the IPython notebook's second coding cell to True. If the program is in Log Mode, it writes designated information to the log file in the folder, logs. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG and HTML files to the folder, images.
+timex.py
+
+If the folders, logs and images, are not present, the Google Colab Notebook will create them.  The Google Colab Notebook, student_loans_colab.ipynb, requires the csv file, student_loans.csv, found in the link, [https://static.bc-edx.com/mbc/ai/m4/datasets/spam-data.csv](https://static.bc-edx.com/mbc/ai/m6/datasets/student_loans.csv), to execute. To place the Google Colab Notebook in Log Mode or Image Mode set the parameter for the appropriate function in the Google Colab Notebook's second coding cell to True. In Log Mode, it writes designated information to the log file in the folder, logs. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG and HTML files to the folder, images.
 
 ----
 
@@ -60,7 +34,7 @@ If the folders, logs and images, are not present, the IPython notebook will crea
 
 #### Source code
 
-student_loans.ipynb, student_loans_constants.py, logx_constants.py, logx.py, pandas_processx.py
+student_loans_colab.ipynb, logx.py, pandasx.py, student_loans_constants.py, timex.py
 
 #### Input files
 
@@ -76,9 +50,9 @@ n/a
 
 #### Software
 
-Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
+Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
 
-![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
 ----
 
@@ -88,21 +62,19 @@ Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
 
 #### main branch 
 
-|&rarr; [./logx_constants.py](./logx_constants.py)
-
 |&rarr; [./logx.py](./logx.py)
 
-|&rarr; [./pandas_processx.py](./pandas_processx.py)
+|&rarr; [./pandasx.py](./pandasx.py)
 
 |&rarr; [./student_loans_constants.py](./student_loans_constants.py)
 
-|&rarr; [./student_loans_optimization_search.ipynb](./student_loans_optimization_search.ipynb)
-
-|&rarr; [./student_loans.ipynb](./student_loans.ipynb)
+|&rarr; [./student_loans_colab.ipynb](./student_loans_colab.ipynb)
 
 |&rarr; [./README.TECHNICAL.md](./README.TECHNICAL.md)
 
 |&rarr; [./README.md](./README.md)
+
+|&rarr; [./timex.py](./timex.py)
 
 |&rarr; [./images/](./images/)
 
@@ -137,8 +109,6 @@ Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
 ### **References:**
 
 ----
-
-[Jupyter Notebook Documentation](https://jupyter-notebook.readthedocs.io/en/stable/)
 
 [Matplotlib Documentation](https://matplotlib.org/stable/index.html)
 
