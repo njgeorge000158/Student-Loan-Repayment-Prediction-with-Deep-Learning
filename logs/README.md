@@ -1,4 +1,4 @@
-This folder contains the log files for the IPython notebooks, student_loans_colab.ipynb and student_loans_hyperparameters_optimization_colab.ipynb: the IPython Notebook generates the files in Log Mode (see [README.TECHNICAL.md](./README.TECHNICAL.md)).
+This folder contains the log files for the Google Colab Notebooks, student_loans_colab.ipynb and student_loans_hyperparameters_optimization_colab.ipynb: the Google Colab Notebook generates the files in Log Mode (see [README.TECHNICAL.md](./README.TECHNICAL.md)).
 
 ----
 
