@@ -24,7 +24,7 @@ student_loans_constants.py
 
 timex.py
 
-If the folders, logs and images, are not present, the Google Colab Notebook will create them.  The Google Colab Notebook, student_loans_colab.ipynb, requires the csv file, student_loans.csv, found in the link, [https://static.bc-edx.com/mbc/ai/m4/datasets/spam-data.csv](https://static.bc-edx.com/mbc/ai/m6/datasets/student_loans.csv), to execute. To place the Google Colab Notebook in Log Mode or Image Mode set the parameter for the appropriate function in the Google Colab Notebook's second coding cell to True. In Log Mode, it writes designated information to the log file in the folder, logs. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG and HTML files to the folder, images.
+If the folders, logs and images, are not present, the Google Colab Notebook will create them.  The Google Colab Notebook, student_loans_colab.ipynb, requires the csv file, student_loans.csv, found in the link, [https://static.bc-edx.com/mbc/ai/m4/datasets/spam-data.csv](https://static.bc-edx.com/mbc/ai/m6/datasets/student_loans.csv), to execute. To place the Google Colab Notebook in Log Mode or Image Mode set the parameter for the appropriate function in the notebook's second coding cell to True. In Log Mode, the notebook writes designated information to the log file in the folder, logs. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG and HTML files to the folder, images.
 
 ----
 
@@ -50,9 +50,9 @@ n/a
 
 #### Software
 
-Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
+Google Colab, Matplotlib, Numpy, Pandas, Python 3.11.5, scikit-learn
 
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
 ----
 
@@ -109,6 +109,8 @@ Matplotlib, Numpy, Pandas, Python 3.11.4, scikit-learn
 ### **References:**
 
 ----
+
+[Google Colab Documentation](https://cloud.google.com/colab/docs)
 
 [Matplotlib Documentation](https://matplotlib.org/stable/index.html)
 
